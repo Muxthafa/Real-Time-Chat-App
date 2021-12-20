@@ -19,6 +19,8 @@ app.use(
     })
   )
 
+  app.use(express.static(path.resolve(__dirname, '../frontend/build')));
+
 const server = http.createServer(app);
 app.use(express.static(publicPath));
 

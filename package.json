@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "14.17.5",
+    "npm": "6.14.14"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server/index.js"
+    "start": "nodemon server/index.js",
+    "build": "cd frontend && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
