@@ -62,7 +62,8 @@ class Join extends Component {
               <div className="form_select">
                 <select name="room" onChange={this.inputUpdate.bind(this)}>
                   <option value="">Please select a group</option>
-                  <option value="React JS">Private Chat</option>
+                  <option value="Private">Private Chat</option>
+                  <option value="Group">Group Chat</option>
                 </select>
                 <i>
                   <RiArrowDropDownLine />
