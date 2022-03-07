@@ -40,3 +40,12 @@ self.addEventListener("activate", (event) => {
     )
   );
 });
+
+self.addEventListener("push", (e) => {
+  const data = e.data.json();
+  console.log("Push Recieved...");
+  self.registration.showNotification(data.title, {
+    body: "Notified by LetsChat App",
+    icon: "/images/icon512.png",
+  });
+});
